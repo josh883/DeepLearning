@@ -9,8 +9,7 @@ This project requires the `env_csci4425` Conda environment
   - torch
   - scikit-learn
   - pandas
-  - numpy
-Note: if not in the Conda environment you will need to use the conda code below before the python code
+  - numpy, Note: if not in the Conda environment you will need to use the conda code below before the python code
 ```bash
 conda activate env_csci4425
 python hw2.py
