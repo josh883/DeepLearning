@@ -1,0 +1,65 @@
+--- Part 1: Data Loading and Exploration ---
+
+Dataset Description snippet:
+ .. _california_housing_dataset:
+
+California Housing dataset
+--------------------------
+
+**Data Set Characteristics:**
+
+:Number of Instances: 20640
+
+:Number of Attributes: 8 numeric, predictive attributes and the target
+
+:Attribute Information:
+    - MedInc        median income in block group
+    - H ...
+
+
+First 5 rows:
+    MedInc  HouseAge  AveRooms  ...  Latitude  Longitude  MedHouseVal
+0  8.3252      41.0  6.984127  ...     37.88    -122.23        4.526
+1  8.3014      21.0  6.238137  ...     37.86    -122.22        3.585
+2  7.2574      52.0  8.288136  ...     37.85    -122.24        3.521
+3  5.6431      52.0  5.817352  ...     37.85    -122.25        3.413
+4  3.8462      52.0  6.281853  ...     37.85    -122.25        3.422
+
+[5 rows x 9 columns]
+
+Summary Statistics:
+              MedInc      HouseAge  ...     Longitude   MedHouseVal
+count  20640.000000  20640.000000  ...  20640.000000  20640.000000
+mean       3.870671     28.639486  ...   -119.569704      2.068558
+std        1.899822     12.585558  ...      2.003532      1.153956
+min        0.499900      1.000000  ...   -124.350000      0.149990
+25%        2.563400     18.000000  ...   -121.800000      1.196000
+50%        3.534800     29.000000  ...   -118.490000      1.797000
+75%        4.743250     37.000000  ...   -118.010000      2.647250
+max       15.000100     52.000000  ...   -114.310000      5.000010
+
+[8 rows x 9 columns]
+
+--- Part 2: Data Preprocessing ---
+      
+ data processing complete---test and training data ready 
+
+--- Part 3: Model Building and Training ---
+Epoch [10/100] - Loss: 2.8868
+Epoch [20/100] - Loss: 1.1202
+Epoch [30/100] - Loss: 0.8989
+Epoch [40/100] - Loss: 0.7105
+Epoch [50/100] - Loss: 0.6214
+Epoch [60/100] - Loss: 0.5531
+Epoch [70/100] - Loss: 0.5015
+Epoch [80/100] - Loss: 0.4661
+Epoch [90/100] - Loss: 0.4427
+Epoch [100/100] - Loss: 0.4281
+
+Loss curve saved as 'loss_curve.png'
+
+--- Part 4: Model Evaluation ---
+
+--- Summary Results ---
+Linear Regression -> MSE: 0.5290, RMSE: 0.7273, R2: 0.5943
+PyTorch MLP       -> MSE: 0.4269, RMSE: 0.6534, R2: 0.6726

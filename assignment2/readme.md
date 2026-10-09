@@ -9,10 +9,15 @@ This project requires the `env_csci4425` Conda environment
   - torch
   - scikit-learn
   - pandas
-  - numpy
-
+  - numpy, Note: if not in the Conda environment you will need to use the conda code below before the python code
 ```bash
+(if conda environment isn't created yet use the following 3 lines)
+conda create -n env_csci4425 python=3.12.2 -y
 conda activate env_csci4425
+pip install numpy pandas scikit-learn matplotlib torch
+(use the following line if not in the env_csci4425 environment, (env_csci4425)should be in parathesis when viewed in the terminal)
+conda activate env_csci4425
+(to run the python file use the line below)
 python hw2.py
 ```
 
