@@ -7,7 +7,7 @@
 ## Setup & Execution Commands
 
 ### 1. Environment Setup
-Using Python 3.12 with a virtual environment (`venv`) and CUDA-enabled PyTorch:
+Using Python 3.12 with a virtual environment (`venv`) and CUDA-enabled PyTorch (I used the pip commands, however the commands may vary depending on your version of python):
 
 ```powershell
 # Create and activate virtual environment (from deeplearning/homework7)
@@ -46,9 +46,9 @@ python -m homework7.2_inference_simple_diffusion
 
 ## Part 1: Data Loading and Exploration
 
-After downloading MNIST using `0_download_mnist.py`, the training dataset is loaded via `torchvision.datasets.MNIST(..., train=True, download=False)` and normalized to `[-1, 1]` using `transforms.Normalize((0.5,), (0.5,))`.
+After downloading MNIST using `0_download_mnist.py`, the training dataset is loaded via `torchvision.datasets.MNIST(..., train=True, download=False)` and normalized to `[-1, 1]` using `transforms.Normalize((0.5,), (0.5,))` (see file descriptions for more details).
 
-* **Training dataset size (`len(dataset)`):** `60,000` samples (plus `10,000` test samples)
+* **Training dataset size (`len(dataset)`):** `60,000` samples (plus `10,000` test samples) 
 * **Single image shape (`dataset[0][0].shape`):** `torch.Size([1, 28, 28])` (1 grayscale channel, $28 \times 28$ resolution)
 
 ### First 3 Training Images (`out/part1_first_three_clean.png`)
