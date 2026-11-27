@@ -3,14 +3,12 @@ venv/
 .venv/
 env/
 
-# Dataset and generated plots/checkpoints (unless needed in README)
-data/
-*.pt
-*.pth
+# Ignore raw MNIST dataset, but allow trained checkpoint in data/
+**/data/MNIST/
 
 # Python and Jupyter cache
 __pycache__/
-*.pyc
+*.py[cod]
 .ipynb_checkpoints/
 
 # OS and IDE files
